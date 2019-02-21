@@ -1,15 +1,30 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace Problems
 {
     public class Program
     {
-        static string Prefix (string input)
+        public static string Prefix(string input)
         {
-            string[] output=input.Split(" ");
-            return($"{input.Length},{output.Length}:{input}");
-        }
+            if(input==null)
+                return null;
+            string[] first=input.Split();
+            List<string> output=new List<string>();
+            for(int stop=0; stop<first.Length;stop++)
+            {
+                if(first[stop]==" " || first[stop]=="")
+                {
 
+                }
+
+                else
+                {
+                    output.Add(first[stop]);
+                }
+            }
+            return($"{input.Length},{output.Count}:{input}");
+        }
 
         static void Main(string[] args)
         {
