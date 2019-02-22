@@ -7,4 +7,4 @@ matrix:
         - dist: xenial
         - dist: trusty
         - dotnet: 2.0.0
-        - os: osx
+          os: osx
