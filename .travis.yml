@@ -6,4 +6,4 @@ matrix:
     include:
         - dist: xenial
         - dist: trusty
-        -
+        
